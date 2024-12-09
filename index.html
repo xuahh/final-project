@@ -1,1 +1,44 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="confetti.min.js"></script>
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="active">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="bakery.html">Bakery</a>
+        </nav>
+
+        <a href="contact.html" class="contact">Contact Me</a>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello</h3>
+
+            <h1>I'm <span>Anh Tran</span></h1>
+
+            <p>I am a student at Haaga-Helia University of Applied Sciences, 
+                majoring in ICT and Business. 
+                With a strong focus on data-driven solutions, 
+                I aim to build a career as a data analyst, 
+                leveraging technology and business insights to drive decision-making.</p>
+            
+            <div class="my-cv" onclick="confetti();">
+                <span>My CV</span>
+            </div>
+        </div>
+
+        <div class="my-img">
+            <img src="IMG_5514.jpg" alt="me">
+        </div>
+    </section>
+</body>
+</html>

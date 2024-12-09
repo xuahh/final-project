@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(170, 138, 110);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 35px 12%;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(235, 188, 44);
+    border-bottom: 3px solid rgb(235, 188, 44);
+}
+
+.navbar a:not(.active) {
+    color: white;
+}
+
+.contact  {
+    padding: 10px 28px;
+    background-color: white;
+    color: rgb(170, 138, 110) !important;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.contact:hover {
+    background-color: rgb(235, 188, 44);
+    box-shadow: 0 0 25px rgb(235, 188, 44);
+    color: white;
+}
+
+.home {
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 32px 5%;
+}
+
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h3 {
+    font-size: 42px;
+}
+
+.home-content h1 {
+    font-size: 62px;
+    line-height: 1.2;
+}
+
+span {
+    color: rgb(235, 188, 44);
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+
+.my-cv {
+    width: 70px;
+    justify-content: center;
+    display: flex;
+    gap: 2em;
+    padding: 15px 28px;
+    background-color: rgb(170, 138, 110);
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.my-cv:hover {
+    background-color: rgb(235, 188, 44);
+    color: white;
+}
+
+.my-cv:hover span{
+    color: white;
+}
+
+
+.my-img img{
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.p-4 {
+    padding: 50px;
+    color: rgb(174, 29, 29);
+    font-size: 50px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.blog, .blog-content {
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+}
+.card-left .card-content {
+    left: 0;
+    align-items: start;
+    text-align: left;
+}
+.card-right .card-content {
+    align-items: end;
+    text-align: right;
+    right: 0;
+}
+
+.content-button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(235, 188, 44);
+    color: white;
+    cursor: pointer;
+}
+
+.bakery {
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: start;
+    gap: 7em;
+    padding: 118px 0px;
+}
+
+.bakery-content {
+
+}
+
+
+
+.flex {
+    display: flex;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.merry-christmas-banner::after, .merry-christmas-banner::before {
+    background: url('./assets/christmas.svg') repeat-x;
+
+    content: "";
+    display: block;
+    height: 3em;
+    /* background: url(../../images/pattern1.svg) repeat-x; */
+    background-size: auto calc(100% + 2px);
+}
+
+.merry-christmas-banner{
+    text-align: center;
+    /* 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+     */
+}
+.bakery-banner {
+    background: url('./images/cake-shop.png');
+    background-position: center;
+}
+
+.bakery-banner-text {
+    background: url('./images/pink.webp') ;
+    background-position: center;
+    background-size: 390px 190px;
+    background-repeat: no-repeat;
+}

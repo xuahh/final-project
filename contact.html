@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <script src="confetti.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .varela-round-regular {
+            font-family: "Varela Round", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'Varela Round';
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="bakery.html" class="active">Bakery</a>
+        </nav>
+
+        <a href="contact.html" class="contact">Contact Me</a>
+    </header>
+    <section class="bakery ">
+        <div class="bakery-content p-5">
+            <div class="mt-[70px] p-5 mb-5 border border-dark-500 rounded-lg flex flex-col gap-4 items-center">
+                <h1 class="text-4xl px-5 pt-5">Contact Me</h1>
+                <div class="flex gap-2">
+                    <div class="flex flex-col w-full gap-1">
+                        <label for="name">Name:</label>
+                        <input class="p-2 border border-dark-500 rounded-lg" type="text" name="name" id=""
+                            placeholder="Your Name">
+                    </div>
+                    <div class="flex flex-col w-full gap-1">
+                        <label for="phone">Phone:</label>
+                        <input class="p-2 border border-dark-500 rounded-lg" type="text" name="phone" id=""
+                            value="+358">
+
+                    </div>
+                </div>
+                <div class="flex flex-col w-full gap-1">
+                    <label for="name">Email:</label>
+                    <input class="p-2 border border-dark-500 rounded-lg" type="email" name="email" id=""
+                        placeholder="Your Email">
+                </div>
+                <div class="flex flex-col w-full gap-1">
+                    <label for="name">Message:</label>
+                    <input class="p-2 border border-dark-500 rounded-lg" type="text" name="message" id=""
+                        placeholder="Message">
+                </div>
+                <div class="flex flex-col w-full gap-1">
+                    
+                    <input class="p-2 border border-dark-500 rounded-lg cursor-pointer bg-yellow-400 hover:bg-yellow-300" type="button" name="submit" id=""
+                        value="Send">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
