@@ -7,7 +7,6 @@
     <title>Portfolio website | Contact Me</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-    <script src="confetti.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,28 +29,28 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header p-2 md:p-[25px]">
         <nav class="navbar">
             <a href="index.html">Portfolio</a>
             <a href="blog.html">Blog</a>
             <a href="bakery.html" class="active">Bakery</a>
         </nav>
 
-        <a href="contact.html" class="contact">Contact Me</a>
+        <a href="contact.html" class="contact p-1 md:px-[28px] md:py-[10px]">Contact Me</a>
     </header>
-    <section class="bakery ">
+    <section class="bakery pt-[60px] md:pt-[90px]">
         <div class="bakery-content">
             <div class="bakery-banner md:px-[20%] p-5 mb-5">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="bakery-banner-text flex justify-center text-center md:text-lg p-5 leading-5">
+                    <div class="bakery-banner-text flex justify-center text-center md:text-lg p-5 leading-5 items-center">
                         STEP INTO A SWEET WONDERLAND AND ORDER THE BEST TREATS
                     </div>
                     <div class="flex justify-center">
-                        <img src="logo.jpg" class="size-[150px] object-cover rounded-full" alt="logo">
+                        <img src="images/logo.jpg" class="size-[150px] object-cover rounded-full" alt="logo">
                     </div>
                 </div>
             </div>
-            <h1 class="text-xl text-center">Our Products</h1>
+            <h1 class="text-4xl text-center p-2">Our Products</h1>
             <p class="text-center px-[15%] mb-5">
                 The Creamie Bun is a homebaked bakery that sells exclusively online. Although it is a small bakery, 
                 we ensure that all the cakes are made with love and the finest ingredients.
@@ -60,25 +59,25 @@
             <div class="w-full px-5">
                 <div class="grid grid-cols-4 gap-4">
                     <div>
-                        <img class="w-full h-[200px] object-cover" src="Mousse-cake.jpg" alt="christmas-background">
+                        <img class="w-full h-[200px] object-cover" src="images/Mousse-cake.jpg" alt="christmas-background">
                         <div class="">
                             <h5>Mousse Cake</h5>
                         </div>
                     </div>
                     <div>
-                        <img class="w-full h-[200px] object-cover" src="brownie.jpg" alt="christmas-background">
+                        <img class="w-full h-[200px] object-cover" src="images/brownie.jpg" alt="christmas-background">
                         <div class="">
                             <h5>Brownie Cake</h5>
                         </div>
                     </div>
                     <div>
-                        <img class="w-full h-[200px] object-cover" src="cookie.jpg" alt="christmas-background">
+                        <img class="w-full h-[200px] object-cover" src="images/cookie.jpg" alt="christmas-background">
                         <div class="">
                             <h5>Cookies</h5>
                         </div>
                     </div>
                     <div>
-                        <img class="w-full h-[200px] object-cover" src="cheesecake.jpg" alt="christmas-background">
+                        <img class="w-full h-[200px] object-cover" src="images/cheesecake.jpg" alt="christmas-background">
                         <div class="">
                             <h5>Cheesecake</h5>
                         </div>
@@ -86,7 +85,7 @@
                 </div>
             </div>
             <div class="flex justify-center px-5">
-                <p class="cursor-pointer text-center p-4 ">View more</p>
+                <p class="cursor-pointer text-center text-xl p-4 ">View more</p>
             </div>
         </div>
     </section>

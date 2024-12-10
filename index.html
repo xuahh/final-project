@@ -7,18 +7,40 @@
     <title>Portfolio website</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        .varela-round-regular {
+            font-family: "Varela Round", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'Varela Round';
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
+    <header class="header p-2 md:p-[25px]">
         <nav class="navbar">
             <a href="index.html" class="active">Portfolio</a>
             <a href="blog.html">Blog</a>
             <a href="bakery.html">Bakery</a>
         </nav>
 
-        <a href="contact.html" class="contact">Contact Me</a>
+        <a href="contact.html" class="contact p-1 md:px-[28px] md:py-[10px]">Contact Me</a>
     </header>
-    <section class="home">
+    <section class="home flex-col md:flex-row pt-[75px] md:pt-[145px] px-5 gap-4 md:gap-12">
+        <div class="my-img">
+            <img src="images/IMG_5514.jpg" alt="me">
+        </div>
         <div class="home-content">
             <h3>Hello</h3>
 
@@ -30,12 +52,9 @@
                 I aim to build a career as a data analyst,
                 leveraging technology and business insights to drive decision-making.</p>
 
-            <div class="my-cv" onclick="confetti();">
+            <div class="my-cv md:w-[200px]" onclick="goToCV();">
                 <span>My CV</span>
             </div>
-        </div>
-        <div class="my-img">
-            <img src="IMG_5514.jpg" alt="me">
         </div>
     </section>
 </body>

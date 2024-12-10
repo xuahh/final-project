@@ -7,7 +7,6 @@
     <title>Portfolio website</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
-    <script src="confetti.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,47 +29,44 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header p-2 md:p-[25px]">
         <nav class="navbar">
             <a href="index.html">Portfolio</a>
             <a href="blog.html">Blog</a>
-            <a href="bakery.html" class="active">Bakery</a>
+            <a href="bakery.html">Bakery</a>
         </nav>
-
-        <a href="contact.html" class="contact">Contact Me</a>
+        <a href="contact.html" class="contact p-1 md:px-[28px] md:py-[10px]">Contact Me</a>
     </header>
-    <section class="bakery ">
-        <div class="bakery-content p-5">
-            <div class="mt-[70px] p-5 mb-5 border border-dark-500 rounded-lg flex flex-col gap-4 items-center">
-                <h1 class="text-4xl px-5 pt-5">Contact Me</h1>
-                <div class="flex gap-2">
-                    <div class="flex flex-col w-full gap-1">
-                        <label for="name">Name:</label>
-                        <input class="p-2 border border-dark-500 rounded-lg" type="text" name="name" id="name"
-                            placeholder="Your Name">
-                    </div>
-                    <div class="flex flex-col w-full gap-1">
-                        <label for="phone">Phone:</label>
-                        <input class="p-2 border border-dark-500 rounded-lg" type="text" name="phone" id="phone"
-                            value="+358">
-
-                    </div>
+    <section class="bakery items-center pt-[60px] md:pt-[105px] px-5 md:px-[25%]">
+        <form class="mt-[70px] p-5 mb-5 border border-dark-500 rounded-lg flex flex-col gap-4 items-center w-full">
+             <h1 class="text-4xl px-5 pt-5">Contact Me</h1>
+            <div class="flex w-full gap-2">
+                <div class="flex flex-col gap-1 w-1/2">
+                    <label for="name">Name:</label>
+                    <input class="p-2 border border-dark-500 rounded-lg" type="text" name="name" id="name"
+                        placeholder="Your Name">
                 </div>
-                <div class="flex flex-col w-full gap-1">
-                    <label for="email">Email:</label>
-                    <input class="p-2 border border-dark-500 rounded-lg" type="email" name="email" id="email"
-                        placeholder="Your Email">
-                </div>
-                <div class="flex flex-col w-full gap-1">
-                    <label for="message">Message:</label>
-                    <input class="p-2 border border-dark-500 rounded-lg" type="text" name="message" id="message"
-                        placeholder="Message">
-                </div>
-                <div class="flex flex-col w-full gap-1">
-                    <input class="p-2 border border-dark-500 rounded-lg cursor-pointer bg-yellow-400 :" type="button" name="submit" id="button" value="Send">
+                <div class="flex flex-col gap-1 w-1/2">
+                    <label for="phone">Phone:</label>
+                    <input class="p-2 border border-dark-500 rounded-lg" type="text" name="phone" id="phone"
+                        value="+358">
                 </div>
             </div>
-        </div>
+            <div class="flex flex-col w-full gap-1">
+                <label for="email">Email:</label>
+                <input class="p-2 border border-dark-500 rounded-lg" type="email" name="email" id="email"
+                    placeholder="Your Email">
+            </div>
+            <div class="flex flex-col w-full gap-1">
+                <label for="message">Message:</label>
+                <input class="p-2 border border-dark-500 rounded-lg" type="text" name="message" id="message"
+                    placeholder="Message">
+            </div>
+            <div class="flex flex-col w-full gap-1">
+                <input class="p-2 border border-dark-500 rounded-lg cursor-pointer bg-yellow-400 hover:bg-yellow-300"
+                    type="button" name="submit" id="button" value="Send">
+            </div>
+        </form>
     </section>
 </body>
 
